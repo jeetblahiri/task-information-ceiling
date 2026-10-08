@@ -1,0 +1,63 @@
+{
+  "protocol_id": "pilot_v1",
+  "scope": "simulation_only; no real EEG or trained foundation model",
+  "protocol_status": "frozen_before_first_outcome",
+  "seed": 20261008,
+  "geometry_seed": 314159,
+  "n_sources": 32,
+  "montages": [19, 64, 256],
+  "n_times": 16,
+  "sample_interval_ms": 4.0,
+  "source_contrast_l2_am": 2e-8,
+  "waveform_normalization": "unit discrete L2 norm; dimensionless",
+  "target_definitions": {
+    "spatial_patch_contrast": "radial source dipoles in Gaussian left/right patches at x=+/-0.045 m, z=0.035 m; width=0.025 m; signed difference normalized to unit L2; constant waveform",
+    "temporal_waveform_difference": "positive Gaussian source patch at x=0.035 m, y=0 m, z=0.035 m; width=0.025 m; unit L2; DCT-II temporal component index 2"
+  },
+  "head_splits": {"train": 6, "validation": 2, "test": 3},
+  "head_perturbations": {
+    "center_uniform_halfwidth_m": 0.0015,
+    "radius_uniform_fraction": 0.025,
+    "brain_conductivity_uniform_fraction": 0.12,
+    "skull_conductivity_uniform_fraction": 0.18,
+    "sensor_tangential_uniform_halfwidth_m": 0.001,
+    "sensor_rotation_uniform_halfwidth_degrees": 2.0
+  },
+  "noise_regimes": [
+    {"id": "iid_low", "sensor_sd_v": 4e-6, "spatial_correlation": 0.0, "temporal_ar1": 0.0},
+    {"id": "iid_high", "sensor_sd_v": 1.2e-5, "spatial_correlation": 0.0, "temporal_ar1": 0.0},
+    {"id": "correlated_colored_low", "sensor_sd_v": 4e-6, "spatial_correlation": 0.55, "spatial_length_m": 0.04, "temporal_ar1": 0.65},
+    {"id": "correlated_colored_high", "sensor_sd_v": 1.2e-5, "spatial_correlation": 0.55, "spatial_length_m": 0.04, "temporal_ar1": 0.65}
+  ],
+  "covariance_scope": "known, label-independent, fixed across heads within each montage/regime; nominal sensor coordinates define spatial covariance",
+  "samples_per_head": {"train": 512, "validation": 256, "test": 2048},
+  "mi_monte_carlo_samples": 32768,
+  "mi_numerical_interval": "estimate plus/minus 1.96 Monte Carlo SE; simulation integration uncertainty only",
+  "decoder_features": {
+    "spatial_nominal_svd_modes": 8,
+    "temporal_dct_modes": 4,
+    "basis_scope": "nominal physics/noise only; fixed before head draws; standardization fitted on training epochs"
+  },
+  "linear_ridge_validation_grid": [0.001, 0.01, 0.1, 1.0],
+  "mlp": {"hidden_units": 16, "epochs": 60, "batch_size": 128, "learning_rate": 0.01, "l2_validation_grid": [0.001, 0.01]},
+  "selection_rule": "lowest validation balanced error; ties use grid order; no test data selection",
+  "calibration": {
+    "probe_contrast_l2_am": 2e-8,
+    "physical_epsilon_rule": "maximum true whitened probe-operator spectral norm over validation heads; test inclusion is descriptive only",
+    "source_probe_basis": "spatial identity pI32, p=source_contrast_l2_am; simulator-only probes, not validated physical stimulation",
+    "norm_model": "spatial epsilon=p||Ws Espace||op; separable target radius=epsilon*||a||/p*||Wt waveform||; Espace tensor I_time",
+    "abstract_probe_cases": ["in_span", "weak_span_eta_0.1", "off_span"],
+    "abstract_d0": 2.0,
+    "abstract_epsilon": 0.4,
+    "abstract_eta_grid": [1.0, 0.5, 0.25, 0.1, 0.05],
+    "no_population_coverage_claim": true
+  },
+  "assumption_stress": {"sign_swap_a_over_sigma": 3.0, "midpoint_a_over_sigma": 4.0, "paired_gain_factor": 2.5},
+  "protocol_changes": [
+    {
+      "stage": "before_first_outcome",
+      "previous_config_sha256": "714803b1cbea5d16967231a6f19142ae3feb2cdb908fe3870ddd2462040c3c09",
+      "reason": "Clarify spatial probe uncertainty and its known temporal factor; replace radial sensor jitter with tangential jitter projected to actual spherical scalp to preserve physical contact geometry. No targets, amplitudes, noise levels, sample sizes, or decoder settings changed."
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "protocol_id": "insight_study_v1",
+  "scope": "simulation-only insight/methods extension: matched-confidence calibration, fixed-budget decision, noise factorial, representation and persistent-subject validation; no real EEG or clinical claims",
+  "protocol_status": "frozen_before_first_insight_information_outcome",
+  "seed": 2026100817,
+  "sphere_source_protocol": "config/full_study.json",
+  "sphere_replicates": [
+    1,
+    2,
+    3
+  ],
+  "sphere_severities": [
+    0.5,
+    2.0
+  ],
+  "geometry_seed": 314159,
+  "n_sources": 32,
+  "n_times": 16,
+  "sample_interval_ms": 4.0,
+  "source_contrast_l2_am": 2e-08,
+  "target_definitions": {
+    "spatial_left_right": {
+      "kind": "signed_patch_difference",
+      "centres_m": [
+        [
+          0.045,
+          0,
+          0.035
+        ],
+        [
+          -0.045,
+          0,
+          0.035
+        ]
+      ],
+      "width_m": 0.025,
+      "dct_index": 0
+    },
+    "spatial_anterior_posterior": {
+      "kind": "signed_patch_difference",
+      "centres_m": [
+        [
+          0,
+          0.045,
+          0.035
+        ],
+        [
+          0,
+          -0.045,
+          0.035
+        ]
+      ],
+      "width_m": 0.025,
+      "dct_index": 0
+    },
+    "temporal_dct2": {
+      "kind": "signed_patch_waveform",
+      "centres_m": [
+        [
+          0.035,
+          0,
+          0.035
+        ]
+      ],
+      "width_m": 0.025,
+      "dct_index": 2
+    },
+    "temporal_dct5": {
+      "kind": "signed_patch_waveform",
+      "centres_m": [
+        [
+          0,
+          0.025,
+          0.045
+        ]
+      ],
+      "width_m": 0.025,
+      "dct_index": 5
+    }
+  },
+  "candidate_channels": 19,
+  "candidate_methods": [
+    "uniform",
+    "nominal_fisher_greedy",
+    "development_worst_fisher_greedy",
+    "development_mean_fisher_greedy",
+    "nominal_amplitude_rank",
+    "shifted_uniform"
+  ],
+  "candidate_design_noise": "iid 6microV, staticcontrast; greedy objective on raw CAR norm; target and six development heads only; pool fixed before calibration/check",
+  "candidate_selection": [
+    "uniform",
+    "nominal_information",
+    "robust_development_minimum",
+    "target_ball_population_floor",
+    "structured_population_floor"
+  ],
+  "decision_scope": "regret within the frozen six-candidate pool; uniform improvement secondary to comparisons against prespecified nominal and robust baselines",
+  "noise_regimes": [
+    {
+      "id": "corr0_ar0",
+      "sensor_sd_v": 6e-06,
+      "spatial_correlation": 0,
+      "spatial_length_m": 0.04,
+      "temporal_ar1": 0
+    },
+    {
+      "id": "corr0_ar0.65",
+      "sensor_sd_v": 6e-06,
+      "spatial_correlation": 0,
+      "spatial_length_m": 0.04,
+      "temporal_ar1": 0.65
+    },
+    {
+      "id": "corr0.55_ar0",
+      "sensor_sd_v": 6e-06,
+      "spatial_correlation": 0.55,
+      "spatial_length_m": 0.04,
+      "temporal_ar1": 0
+    },
+    {
+      "id": "corr0.55_ar0.65",
+      "sensor_sd_v": 6e-06,
+      "spatial_correlation": 0.55,
+      "spatial_length_m": 0.04,
+      "temporal_ar1": 0.65
+    }
+  ],
+  "calibration": {
+    "development_heads": 6,
+    "calibration_heads": 119,
+    "sphere_check_heads": 200,
+    "content": 0.95,
+    "method_families": [
+      "global_spectral",
+      "target_ball",
+      "structured"
+    ],
+    "same_center": "fixed nominal contrast for all methods",
+    "scale_fit": "positive RMS development error score, floor1e-6 standard units",
+    "structured_shape": "uncentered development target-error matrix /sqrt(6), isotropic residual tau=max(.25*RMS target error,1e-6); core certified decomposition/support contract",
+    "head_score": "global maximum of normalized gauges over all six candidates, four targets and four factorial regimes; independently calibrated max119 per method",
+    "joint_events": 21,
+    "joint_confidence_lower": "1-21*.95**119; eighteen sphere and three one-template BEM method certificates",
+    "population_scope": "declared simulator-law content, not allsupport or human anatomy",
+    "bounds": "audited centered/common known covariance/label-independent contract only",
+    "structured_interpretation": "physics-derived development contrast directions plus isotropic residual; convex relaxation rather than exact physical parameter manifold"
+  },
+  "information": {
+    "samples": 8192,
+    "decision_precision_samples": 65536,
+    "batch_size": 256,
+    "paired": "same full-sensor white spatial draw mapped to six actual montage likelihoods; same full epoch draws across representation likelihoods; coupled head/label/noise draws give valid paired candidate differences",
+    "numerical_scope": "bounded integration uncertainty conditional on finite operator bank; independent replicate ranges separate",
+    "full_sufficient_projection": "centered fixed waveform permits exact temporal matched projection; covariance-rich cases preserve span of all classmean and background temporal directions",
+    "decision_precision_conditions": [
+      {
+        "target": "spatial_left_right",
+        "regime": "corr0.55_ar0.65"
+      },
+      {
+        "target": "temporal_dct2",
+        "regime": "corr0_ar0"
+      }
+    ],
+    "channel_count_references": "known-head Gaussian oracle at original fixed nested19/64/256 for sphere,19subsetall64 BEM; not hidden MI"
+  },
+  "representations": {
+    "feature_budget": 8,
+    "methods": [
+      "pca",
+      "pca_task",
+      "svd_lowpass",
+      "lowpass",
+      "target_aware"
+    ],
+    "primary_targets": [
+      "spatial_left_right",
+      "spatial_anterior_posterior"
+    ],
+    "evaluation_candidate": "uniform",
+    "fit_scope": "nominal and development heads only; generic PCA design covariance is equal four-target source contrasts plus factor3 sharedbackground; target-aware uses only target contrasts from development; white row basis carries actual projected covariance",
+    "pca_background_multiplier": 3.0,
+    "svd_spatial_modes": 2,
+    "svd_temporal_modes": 4,
+    "lowpass_spatial_modes": 4,
+    "lowpass_temporal_modes": 2,
+    "primary_comparator": "pca_task: exact six-development-head balanced same-task covariance plus actual noise, no labels needed to estimate covariance; pca generic multitask/background design is explicitly a prior-mismatch diagnostic"
+  },
+  "decoders": {
+    "representative_targets": [
+      "spatial_left_right",
+      "temporal_dct2"
+    ],
+    "representative_regime": "corr0.55_ar0.65",
+    "representations": [
+      "pca_task",
+      "target_aware"
+    ],
+    "candidate": "structured_population_floor",
+    "sphere_replicates": [
+      1,
+      2,
+      3
+    ],
+    "sphere_severities": [
+      0.5,
+      2.0
+    ],
+    "development_train_heads": 6,
+    "validation_heads": 2,
+    "samples_per_head": {
+      "train": 384,
+      "validation": 256,
+      "check": 96
+    },
+    "linear_ridge_grid": [
+      0.001,
+      0.1
+    ],
+    "mlp": {
+      "hidden_units": 16,
+      "epochs": 50,
+      "batch_size": 128,
+      "learning_rate": 0.01,
+      "l2_grid": [
+        0.001,
+        0.01
+      ]
+    },
+    "selection": "training-only standardization; independent validation balanced-error outer grid; validation logloss MLP epoch; check excluded"
+  },
+  "richer_subject": {
+    "targets": [
+      "spatial_left_right",
+      "temporal_dct2"
+    ],
+    "regime": "corr0.55_ar0.65",
+    "candidate": "uniform",
+    "source_events": "pure positive normalized patch events, unequal event timecourses for temporal target; source positions shifted within fixed source grid by recomputing patchweights",
+    "source_event_norm_am": 2e-08,
+    "source_location_uniform_halfwidth_m": 0.003,
+    "source_amplitude_uniform_fraction": 0.15,
+    "static_background_coefficient_sd": 0.5,
+    "epoch_background_coefficient_sd": 0.5,
+    "background_source_norm_am": 2e-08,
+    "background_waveform": "unitL2 DC",
+    "calibration_epochs": [
+      0,
+      2,
+      16
+    ],
+    "calibration_labels": "iid balanced-probability known labels from same task; head+source+staticbackground state persists through calibration/test",
+    "exact_bank_samples": 2048,
+    "operational_subjects": 200,
+    "test_epochs_per_subject": 64,
+    "development_prior": "uniform six development states whose simulator parameters are known; genuinely unseen check subjects; predictive risk/logloss, no claimed learned EEG prior or misspecified-posterior MI",
+    "rank_one_contract": "epochwise independent rank-one background conditional covariance; static coefficient sampled once per latent subject state; centered certificate marked inapplicable",
+    "gap_terminology": "known complete latent state minus hidden state, including anatomy/source variation/static background; not pure head loss"
+  },
+  "bem": {
+    "resource_directory": "resources/bem_validation",
+    "geometry": "BioSemi64 standard names,32 fsaverage cortical-normal sources",
+    "anatomical_scope": "one public template anatomy; independent BEM contact-perturbation family not anatomy-population replication",
+    "development_heads": 6,
+    "calibration_heads": 119,
+    "check_heads": 48,
+    "validation_only": "all four targets and factorial regimes, six 19-contact candidates; same policies and units; no sphere-result tuning",
+    "solver_resolution_check": "ico3 vs ico4 nominal forward; final main solver official ico4 5120 triangles per layer, same contact/source/split design"
+  },
+  "primary_thresholds": {
+    "median_population_width_reduction_bits": 0.1,
+    "mean_selected_information_gain_bits": 0.02,
+    "mean_selected_bayes_error_reduction": 0.01,
+    "negligible_head_identity_loss_bits": 0.02,
+    "primary_baselines": [
+      "nominal_information",
+      "robust_development_minimum"
+    ],
+    "uniform_is_secondary": true,
+    "representation_effect_bits": 0.02,
+    "representation_primary_excludes_deliberate_DCT5_filter_control": true
+  },
+  "protocol_changes": [
+    {
+      "stage": "pre_outcome_design_clarification",
+      "reason": "BEM resolution upgraded by independent solver sensitivity preflight to ico4 before task outcomes; same source/contact/split seeds"
+    },
+    {
+      "stage": "pre_outcome_design_clarification",
+      "reason": "Higher precision paired decision audit limited prospectively to two specified target/regime families per bank; all candidate decisions retain main8192-draw paired estimates"
+    },
+    {
+      "stage": "pre_outcome_design_clarification",
+      "reason": "Calibration labels iid with balanced marginal probability as implemented by exact persistent-head API; richer nuisance gap includes the full latent source/background state"
+    },
+    {
+      "stage": "pre_outcome_split_refresh",
+      "reason": "Earlier aggregate sphere outcomes motivated the extension; fresh independent calibration/check draws preserve prospective certificates and untouched acquisition decisions, while existing nominal/development/validation assets are retained."
+    },
+    {
+      "stage": "pre_outcome_baseline_addition",
+      "reason": "Independent audits identified generic PCA design-prior mismatch. Add stronger task-matched covariance PCA at same budget for primary representation/decoder comparison; preserve generic PCA only as diagnostic."
+    }
+  ],
+  "sphere_resource_directory": "resources/insight_sphere_banks"
+}

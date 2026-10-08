@@ -1,0 +1,98 @@
+{
+  "protocol_id": "full_study_v1",
+  "scope": "simulation-only verification/usefulness of existing I5/I8; no real EEG, downloads, compression research, or foundation-model training",
+  "protocol_status": "frozen_before_first_full_study_outcome",
+  "seed": 2026100801,
+  "replicate_seeds": [17011, 27109, 37139, 47221, 57329],
+  "geometry_seed": 314159,
+  "n_sources": 32,
+  "n_times": 16,
+  "sample_interval_ms": 4.0,
+  "source_contrast_l2_am": 2e-8,
+  "waveform_normalization": "unit discrete L2; source-time contrast coefficient-array norm is 20 nA m, not per-sample amplitude",
+  "target_definitions": {
+    "spatial_left_right": {"kind": "signed_patch_difference", "centres_m": [[0.045, 0, 0.035], [-0.045, 0, 0.035]], "width_m": 0.025, "dct_index": 0},
+    "spatial_anterior_posterior": {"kind": "signed_patch_difference", "centres_m": [[0, 0.045, 0.035], [0, -0.045, 0.035]], "width_m": 0.025, "dct_index": 0},
+    "temporal_dct2": {"kind": "signed_patch_waveform", "centres_m": [[0.035, 0, 0.035]], "width_m": 0.025, "dct_index": 2},
+    "temporal_dct5": {"kind": "signed_patch_waveform", "centres_m": [[0, 0.025, 0.045]], "width_m": 0.025, "dct_index": 5}
+  },
+  "montages": [19, 64, 256],
+  "severity_multipliers": [0.5, 1.0, 2.0],
+  "head_perturbations_at_severity1": {
+    "center_uniform_halfwidth_m": 0.0015,
+    "radius_uniform_fraction": 0.025,
+    "brain_conductivity_uniform_fraction": 0.12,
+    "skull_conductivity_uniform_fraction": 0.18,
+    "sensor_tangential_uniform_halfwidth_m": 0.001,
+    "sensor_rotation_uniform_halfwidth_degrees": 2.0,
+    "sensor_contact_contract": "cap rotation and tangential jitter projected onto actual outer sphere; fixed global source positions and orientations"
+  },
+  "noise_regimes": [
+    {"id": "iid_low", "sensor_sd_v": 4e-6, "spatial_correlation": 0.0, "temporal_ar1": 0.0},
+    {"id": "iid_high", "sensor_sd_v": 1.2e-5, "spatial_correlation": 0.0, "temporal_ar1": 0.0},
+    {"id": "correlated_colored_low", "sensor_sd_v": 4e-6, "spatial_correlation": 0.55, "spatial_length_m": 0.04, "temporal_ar1": 0.65},
+    {"id": "correlated_colored_high", "sensor_sd_v": 1.2e-5, "spatial_correlation": 0.55, "spatial_length_m": 0.04, "temporal_ar1": 0.65}
+  ],
+  "covariance_contract": "known common label/head-independent Cs tensor Ct within each condition, formed at fixed nominal full sensor positions, then subset and full-rank CAR coordinates",
+  "calibration": {
+    "sample_sizes": [2, 19, 59, 99, 119],
+    "check_heads_per_replicate_severity": 200,
+    "population_content": 0.95,
+    "global_head_score": "max over six fixed montage/noise-shape spatial spectral scores at 4 microV; p||Ws Espace||op with p=20nAm",
+    "global_membership": "one scalar score simultaneously controls all predeclared montage/noise/target conditions; high-noise epsilon scales by 4microV/sigma; temporal radius epsilon*kappa*||Wt waveform||",
+    "nominal_scope": "fixed nominal sphere before independent calibration; exact simulator-known probe errors, not noisy physical stimulation estimates",
+    "quantile_rule": "maximum of n independent calibration scores",
+    "pointwise_content_confidence": "1-beta^n; beta=.95",
+    "primary_simultaneous_scope": "n119, all15 replicate/severity calibration sets, all targets/montages/noise conditions via global membership; confidence at least 1-15*.95^119",
+    "partial_coverage_formula": "L=max(0,beta*F(dminus)-h2(1-beta),1-h2(min(.5,beta*Phi(-dminus/2)+(1-beta)))); U=beta*F(dplus)+(1-beta)"
+  },
+  "physical_information": {
+    "law": "conditional uniform finite ensemble of200 independently drawn check heads, hides head identity; not continuous generator MI",
+    "monte_carlo_samples": 4096,
+    "precision_audit_samples": 65536,
+    "batch_size": 256,
+    "numerical_uncertainty": "empirical Monte Carlo SE and pointwise Hoeffding95 interval for bounded posterior entropy; ensemble/head approximation not included",
+    "sufficient_projection": "exact fixed-waveform matched temporal projection; use full spatial CAR dimension and exact dot-product finite-mixture likelihood, no singular-value truncation"
+  },
+  "decoder": {
+    "representative_conditions": [
+      {"target": "temporal_dct2", "channels": 256, "regime": "iid_low"},
+      {"target": "spatial_left_right", "channels": 19, "regime": "correlated_colored_high"}
+    ],
+    "independent_train_heads": 6,
+    "independent_validation_heads": 2,
+    "samples_per_head": {"train": 512, "validation": 256, "check": 128},
+    "spatial_nominal_svd_modes": 8,
+    "temporal_dct_modes": 4,
+    "linear_ridge_grid": [0.001, 0.01, 0.1, 1.0],
+    "mlp": {"hidden_units": 16, "epochs": 60, "batch_size": 128, "learning_rate": 0.01, "l2_grid": [0.001, 0.01]},
+    "selection": "train-only standardization; fixed nominal basis; independent validation balanced error outer grids (grid-order ties); MLP epoch/early stopping validation log loss; no check/test selection"
+  },
+  "abstract": {
+    "seeds": [901, 1901, 2901, 3901, 4901, 5901, 6901, 7901],
+    "ball_nominal_d": [0.2, 0.5, 1.0, 2.0, 4.0],
+    "ball_radius_over_d": [0.0, 0.1, 0.5, 1.0, 1.5, 3.0],
+    "probe_eta": [1.0, 0.1],
+    "ball_laws": ["lower_endpoint_point", "interior_boundary_dirichlet", "adverse_boundary_mixture"],
+    "polytope_minimum_norms": [0.0, 0.1, 0.5, 1.0, 2.0],
+    "polytope_shapes": ["triangle", "rectangle"],
+    "polytope_laws": ["closest_point", "boundary_uniform", "interior_dirichlet", "rare_closest_weight_0.001", "dominant_closest_weight_0.999"],
+    "quadrature_initial_order": 32,
+    "quadrature_max_fine_order": 128,
+    "quadrature_refinement_change_threshold_bits": 0.00005,
+    "method": "exact finite-mixture likelihood in dimension1/2, Gauss-Hermite with declared adaptive numerical refinement; order comparison diagnostic, not rigorous error bound",
+    "offspan_t_values": [-20.0, -5.0, -2.0, 0.0, 2.0, 5.0, 20.0],
+    "finite_population_fixture": {
+      "contrasts": [1.6, 1.8, 2.0, 2.2, 2.4, 0.0, -2.0],
+      "probabilities": [0.15, 0.2, 0.3, 0.2, 0.14, 0.002, 0.008],
+      "nominal_contrast": 2.0,
+      "calibration_replications": 1000,
+      "seed": 81001,
+      "purpose": "declared exact finite acquisition population; true inclusion mass and maximum-score failure probability known, with actual hidden-law MI and partial-mass bounds"
+    },
+    "assumption_controls": ["hidden_sign_swap", "unknown_midpoint", "label_dependent_operator", "unequal_label_covariance", "invertible_coordinates", "paired_fixed_gain", "rank_reducing_projection"]
+  },
+  "descriptive_benchmarks": {"interval_width_at_most_bits": 0.25, "floor_above_bits": 0.05, "ceiling_below_bits": 0.5},
+  "publication_gates": {"mathematical_checks": "all constructed support/endpoint/coordinate checks pass; reported numerical comparisons within their explicitly declared integration tolerance", "usefulness": "report fractions at prespecified descriptive benchmarks without using them as statistical thresholds", "originality": "independent literature/proof audit; simulation pass does not establish originality", "population_scope": "simulator law only; no complete-support or real-head guarantee"},
+  "protocol_changes": []
+}

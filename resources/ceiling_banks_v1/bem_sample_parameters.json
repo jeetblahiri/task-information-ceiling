@@ -1,0 +1,362 @@
+[
+  {
+    "head_id": "bem_sample_000",
+    "seed": 154000001,
+    "split": "development",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.0021610549770699657,
+    "contact_surface_reprojection_error_m": 2.7863784897804254e-17,
+    "rotation_degrees": 0.18711014587984254,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_001",
+    "seed": 154001010,
+    "split": "development",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.004337540974515332,
+    "contact_surface_reprojection_error_m": 2.943923360032078e-17,
+    "rotation_degrees": 1.5883332265825847,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_002",
+    "seed": 154002019,
+    "split": "development",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.0027685042900125164,
+    "contact_surface_reprojection_error_m": 2.8609792490763984e-17,
+    "rotation_degrees": -0.6086481369215395,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_003",
+    "seed": 154003028,
+    "split": "development",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.005037594242586038,
+    "contact_surface_reprojection_error_m": 3.3993498887762956e-17,
+    "rotation_degrees": -1.7168231103065015,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_004",
+    "seed": 154004037,
+    "split": "development",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.0021553199225494064,
+    "contact_surface_reprojection_error_m": 2.943923360032078e-17,
+    "rotation_degrees": -0.08274631175218294,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_005",
+    "seed": 154005046,
+    "split": "development",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.005004430689009152,
+    "contact_surface_reprojection_error_m": 4.338597080938093e-07,
+    "rotation_degrees": -1.8976562580323044,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_006",
+    "seed": 154006055,
+    "split": "development",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.004091678917915016,
+    "contact_surface_reprojection_error_m": 3.179800655392251e-17,
+    "rotation_degrees": 1.2394596332585555,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_007",
+    "seed": 154007064,
+    "split": "development",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.002808577346846794,
+    "contact_surface_reprojection_error_m": 2.7820086907213324e-17,
+    "rotation_degrees": -0.7901501347009883,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_008",
+    "seed": 154008073,
+    "split": "validation",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.003659707226352019,
+    "contact_surface_reprojection_error_m": 2.7641808205093462e-05,
+    "rotation_degrees": 1.2694217907938588,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_009",
+    "seed": 154009082,
+    "split": "validation",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.005459213144473425,
+    "contact_surface_reprojection_error_m": 3.1080126089379415e-17,
+    "rotation_degrees": -1.9560569914868982,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_010",
+    "seed": 154010091,
+    "split": "validation",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.00198011884567548,
+    "contact_surface_reprojection_error_m": 2.943923360032078e-17,
+    "rotation_degrees": 0.10799869031781029,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_011",
+    "seed": 154011100,
+    "split": "validation",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.0021888122711937507,
+    "contact_surface_reprojection_error_m": 2.943923360032078e-17,
+    "rotation_degrees": -0.043602109957882274,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_012",
+    "seed": 154012109,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.002053460658976323,
+    "contact_surface_reprojection_error_m": 3.0444273447339113e-17,
+    "rotation_degrees": -0.08584413154165071,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_013",
+    "seed": 154013118,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.0024289711586921938,
+    "contact_surface_reprojection_error_m": 1.97026712507607e-17,
+    "rotation_degrees": -0.35482377157586464,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_014",
+    "seed": 154014127,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.0023861564004354586,
+    "contact_surface_reprojection_error_m": 2.5257955065251657e-17,
+    "rotation_degrees": 0.11257936032716032,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_015",
+    "seed": 154015136,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.0045684450901687405,
+    "contact_surface_reprojection_error_m": 2.798502021246082e-17,
+    "rotation_degrees": -1.851231477776638,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_016",
+    "seed": 154016145,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.0033391644190632814,
+    "contact_surface_reprojection_error_m": 2.943923360032078e-17,
+    "rotation_degrees": 1.1587196600516778,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_017",
+    "seed": 154017154,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.00209511858986441,
+    "contact_surface_reprojection_error_m": 2.863935994797648e-17,
+    "rotation_degrees": 0.08870120963315165,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_018",
+    "seed": 154018163,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.002960109132993244,
+    "contact_surface_reprojection_error_m": 2.8662335771926895e-17,
+    "rotation_degrees": 0.6958174387599678,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_019",
+    "seed": 154019172,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.004171925732359312,
+    "contact_surface_reprojection_error_m": 3.0444273447339113e-17,
+    "rotation_degrees": 1.3404927448847421,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_020",
+    "seed": 154020181,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.005381274385533738,
+    "contact_surface_reprojection_error_m": 1.1060242564362978e-06,
+    "rotation_degrees": -1.9555029596701132,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_021",
+    "seed": 154021190,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.0023899250756749743,
+    "contact_surface_reprojection_error_m": 3.146503395892913e-17,
+    "rotation_degrees": 0.1779699015625278,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_022",
+    "seed": 154022199,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.004486347385402358,
+    "contact_surface_reprojection_error_m": 2.867627639811765e-17,
+    "rotation_degrees": -1.7077767543171785,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_023",
+    "seed": 154023208,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.005160431335272359,
+    "contact_surface_reprojection_error_m": 5.554502221569642e-17,
+    "rotation_degrees": -1.8187431062610306,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_024",
+    "seed": 154024217,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.0037830929862643975,
+    "contact_surface_reprojection_error_m": 3.179800655392251e-17,
+    "rotation_degrees": 1.2994298501292159,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_025",
+    "seed": 154025226,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.0023772999888094556,
+    "contact_surface_reprojection_error_m": 2.4037033579794548e-17,
+    "rotation_degrees": -0.2932478205708593,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_026",
+    "seed": 154026235,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.00397195987635177,
+    "contact_surface_reprojection_error_m": 2.8609792490763984e-17,
+    "rotation_degrees": -1.2911451267489378,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_027",
+    "seed": 154027244,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.005099053447268071,
+    "contact_surface_reprojection_error_m": 3.122502256758253e-17,
+    "rotation_degrees": 1.894861021766721,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_028",
+    "seed": 154028253,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.004105620113967969,
+    "contact_surface_reprojection_error_m": 3.179800655392251e-17,
+    "rotation_degrees": -1.2453807203302407,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_029",
+    "seed": 154029262,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.004671552725326561,
+    "contact_surface_reprojection_error_m": 2.8609792490763984e-17,
+    "rotation_degrees": 1.7544170054088095,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_030",
+    "seed": 154030271,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.003443800020474875,
+    "contact_surface_reprojection_error_m": 2.0816681711721685e-17,
+    "rotation_degrees": -0.9572947014128443,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_031",
+    "seed": 154031280,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.002054961964829048,
+    "contact_surface_reprojection_error_m": 2.9643166026424786e-17,
+    "rotation_degrees": -0.2881934581057761,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_032",
+    "seed": 154032289,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.00364539445940657,
+    "contact_surface_reprojection_error_m": 2.0816681711721685e-17,
+    "rotation_degrees": 1.0603472818817425,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_033",
+    "seed": 154033298,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.002530228706937582,
+    "contact_surface_reprojection_error_m": 3.1080126089379415e-17,
+    "rotation_degrees": 0.3925235108333083,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_034",
+    "seed": 154034307,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.00340618413272961,
+    "contact_surface_reprojection_error_m": 3.179800655392251e-17,
+    "rotation_degrees": -0.9278716070963733,
+    "fixed_across_observations": true
+  },
+  {
+    "head_id": "bem_sample_035",
+    "seed": 154035316,
+    "split": "check",
+    "subject": "sample",
+    "maximum_contact_displacement_m": 0.005212614420403022,
+    "contact_surface_reprojection_error_m": 3.0444273447339113e-17,
+    "rotation_degrees": -1.852815298138884,
+    "fixed_across_observations": true
+  }
+]

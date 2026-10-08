@@ -1,0 +1,16 @@
+# Local runtime and generated outputs
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.DS_Store
+.pytest_cache/
+_reproduction/
+results/
+evidence/
+resources/*
+!resources/ceiling_banks_v1/
+resources/ceiling_banks_v1/__pycache__/
+# Paper drafts and journal templates remain local
+/manuscript/
+/ioplatextemplate/

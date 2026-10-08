@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "clean_install_reference_files": 310,
+  "scientific_sources_verified": 15,
+  "prepared_operators": 144,
+  "unit_and_protocol_tests": 50,
+  "changed_file_overwrite_refused": true,
+  "reference_archive_sha256": "6c9638fa43750021a82a36acd4729942bce22e3ca5184577bf6020936347efc0",
+  "full_primary_reproduction": {
+    "status": "passed",
+    "numeric_summary_values_compared": 472,
+    "maximum_absolute_difference": 0,
+    "independent_numerical_audit": "passed",
+    "numerical_inequality_flags": 0,
+    "upstream_provenance_checks_not_repeated": 340,
+    "scope": "Primary experiment from verified prepared banks. Missing raw anatomy and unrelated historical outputs are explicitly reported; no primary numerical checks omitted."
+  }
+}

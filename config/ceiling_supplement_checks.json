@@ -1,0 +1,10 @@
+{
+  "protocol": "ceiling_benchmark_v1_supplement_checks",
+  "predeclared_before_main_check_outcome_inspection": true,
+  "purpose": "Resolve numerical BEM mesh sensitivity and quantify the value of available subject calibration within the richer persistent-state model",
+  "main_config_sha256": "b026438e267e4bb6a98e7894045320f32d53bbbf8094409c00794d3a5cd75453",
+  "mesh": {"anatomies": ["fsaverage", "sample"], "benchmark_ico": 3, "finer_ico": 4, "tasks": "all six frozen main tasks", "noise_regimes": "all four frozen main regimes", "caps": "nominal only; matched source states and source normals", "montage_channels": 19},
+  "calibration": {"banks": "all four frozen main banks", "tasks": ["spatial_lateral", "temporal_fine_latency"], "noise_regime": "joint", "domains": ["check_id", "check_shift"], "known_label_epoch_budgets": [0, 2, 8, 32], "exact_information_outer_draws": 16384, "operational_subject_draws": 256, "operational_test_epochs_per_subject": 32, "scope": "Full test observations and full known-label calibration, same fixed state per subject; exact finite-bank prior reference separately from development-prototype operational predictions"},
+  "seed_salt": "ceiling_supplement_v1",
+  "interpretation": "Separate supplementary model/numerical checks; no changes to main targets, amplitudes, noise, policies or outcomes. Mesh comparison is a sensitivity check, not a convergence guarantee. Calibration reference knows the finite test-state law and does not certify real EEG calibration benefit."
+}

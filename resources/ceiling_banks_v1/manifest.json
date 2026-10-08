@@ -1,0 +1,36 @@
+{
+  "started_at_utc": "2026-10-08T06:48:05.366761+00:00",
+  "completed_at_utc": "2026-10-08T06:49:11.596494+00:00",
+  "elapsed_seconds": 66.22957116691396,
+  "script_sha256": "891da64d89209b68459297897372c8c87cb1482a4d1ed338a77833f0245d1ff7",
+  "config_sha256": "b026438e267e4bb6a98e7894045320f32d53bbbf8094409c00794d3a5cd75453",
+  "input_sha256": {
+    "resources/ceiling_anatomy/sample/bem/sample-1280-1280-1280-bem-sol.fif": "af7e0fda861a594650ac2a9dd627401c166ad130d026668bd58108a660dd89ae",
+    "resources/ceiling_anatomy/sample/bem/sample-1280-1280-1280-bem.fif": "3adf23f8c62b5584ba049e88220038e8d9fbed669784ca31039298a6d5f0e1b1",
+    "resources/ceiling_anatomy/sample/bem/sample-fiducials.fif": "c003adb4f8accc0b08ab19a0cc33603f15a804ca12e8f2c94f4c5ea6d13d0467",
+    "resources/ceiling_anatomy/sample/bem/sample-320-320-320-bem-sol.fif": "a0d8308035c4e1c24e47f9f655a970c2562f2a4c83109a9669cdc6182d2a7b78",
+    "resources/ceiling_anatomy/sample/bem/sample-oct-6-src.fif": "3df68067b1b55179f6dad57583be342d2f23e4990d9b2b4954969b110491e648",
+    "resources/ceiling_anatomy/sample/sample-trans.fif": "cc3cace84721aaa30b4d277a387b00a19e84890fa897bd548a153bc588e9ad47",
+    "resources/anatomy/fsaverage/bem/fsaverage-ico-5-src.fif": "7e772329b88a5741c824e46dc37678717bba8812a7d9ed09ca66380408ded125",
+    "resources/anatomy/fsaverage/bem/fsaverage-trans.fif": "a30002293d88c1a38b5a6998b5287b6dfe60196c6ca7c9e4081faabd77e5010b",
+    "resources/anatomy/fsaverage/bem/fsaverage-5120-5120-5120-bem.fif": "ca6c13fe375da5c1107d6323b199001ee9b6de6ab5aa4b32cb3b540cce28c3fc"
+  },
+  "prepared_before_task_outcomes": true,
+  "operators": 144,
+  "unique_head_seeds": 144,
+  "anatomy_statement": "Two BEM geometries: one average template and one individual public anatomy; not a sampled human population",
+  "output_sha256": {
+    "resources/ceiling_banks_v1/bem_sample_parameters.json": "fa56e2904c25ffbd8f9708d2970518cdf8c3dbf7a8cd3d94517359487464c098",
+    "resources/ceiling_banks_v1/sphere_rep1.npz": "89668e17882c3a4e29d7462c2865932df35a65aa8a00ec819b71818cdf0e81ef",
+    "resources/ceiling_banks_v1/sphere_rep2.npz": "2fb4c633a0be63a654526b5ebb4aa2080403529f62aed5f7d1f844efb9df9779",
+    "resources/ceiling_banks_v1/bem_fsaverage_parameters.json": "bc99294c360b15e517c041981a340ccb5b40a7da18a6ceffcd3e843fded264dc",
+    "resources/ceiling_banks_v1/bem_fsaverage.npz": "e74767e58359e29b0d8f6ccbc7dd07e38d39a4bdb1eb5a5aa874df9c3284f1f6",
+    "resources/ceiling_banks_v1/sphere_rep1_parameters.json": "41701d499b968836d964a64306eddebc6db05855bf83e91431ec6266bd8403c0",
+    "resources/ceiling_banks_v1/bem_sample.npz": "b79e1a450eb498fb608da487169d43d6b1850d302a6d19f5c98de11f81542238",
+    "resources/ceiling_banks_v1/bem_fsaverage_metadata.json": "f6e0607345e9509f761ed3af010409399304abcb3cab9019f57992ba5a10120c",
+    "resources/ceiling_banks_v1/sphere_rep2_metadata.json": "047bf2d4236e2199915d55b5cd462ba41c9f3f4daa5c7c41b9aa89a918275fec",
+    "resources/ceiling_banks_v1/bem_sample_metadata.json": "96e777e4df78dff5a93a05f4f4fa0cb1d4f4ea259fd89be4c5c575c487cc78a4",
+    "resources/ceiling_banks_v1/sphere_rep2_parameters.json": "91bc5ec76e6f442bd563cf3fdf8f4b7ee7e821c7467489f9b64e42058d39de83",
+    "resources/ceiling_banks_v1/sphere_rep1_metadata.json": "047bf2d4236e2199915d55b5cd462ba41c9f3f4daa5c7c41b9aa89a918275fec"
+  }
+}

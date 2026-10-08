@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "scope": "Primary benchmark; original execution and reproduction kept separate",
+  "numeric_summary_values_compared": 472,
+  "maximum_absolute_difference": 0
+}

@@ -1,0 +1,650 @@
+[
+  {
+    "seed": 151000001,
+    "severity": 1.5,
+    "radius_m": 0.08694769090019921,
+    "center_m": [
+      0.0002748543938485026,
+      0.000393418600270627,
+      0.0019323767415255315
+    ],
+    "brain_conductivity_multiplier": 0.9853158397366577,
+    "skull_conductivity_multiplier": 1.1561723817821687,
+    "cap_rotation_degrees": 0.37986913866825534,
+    "maximum_tangential_jitter_m": 0.0021414867291096916,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_000",
+    "split": "development",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151001010,
+    "severity": 1.5,
+    "radius_m": 0.08936893176679321,
+    "center_m": [
+      -0.0001918697359670315,
+      0.0015914403401037403,
+      -0.0005998533947489773
+    ],
+    "brain_conductivity_multiplier": 1.0434698436403824,
+    "skull_conductivity_multiplier": 0.7939264124702281,
+    "cap_rotation_degrees": -0.6027826340110214,
+    "maximum_tangential_jitter_m": 0.0023866237941257474,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_001",
+    "split": "development",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151002019,
+    "severity": 1.5,
+    "radius_m": 0.08870155353974501,
+    "center_m": [
+      -0.0005317796235260405,
+      0.0003727980689534331,
+      -0.001366445560011954
+    ],
+    "brain_conductivity_multiplier": 0.8766973018518813,
+    "skull_conductivity_multiplier": 0.911375207292932,
+    "cap_rotation_degrees": -0.7632009329064733,
+    "maximum_tangential_jitter_m": 0.002054982435486515,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_002",
+    "split": "development",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151003028,
+    "severity": 1.5,
+    "radius_m": 0.09217247495095734,
+    "center_m": [
+      0.0009260528787789853,
+      0.0012048276769722514,
+      0.0016881651336770487
+    ],
+    "brain_conductivity_multiplier": 1.0724094620080196,
+    "skull_conductivity_multiplier": 1.2312018323433918,
+    "cap_rotation_degrees": -1.109986685248782,
+    "maximum_tangential_jitter_m": 0.0021569468928851403,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_003",
+    "split": "development",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151004037,
+    "severity": 1.5,
+    "radius_m": 0.08732306718143486,
+    "center_m": [
+      0.0010035809980407514,
+      0.00224489093937906,
+      -0.002027133916628419
+    ],
+    "brain_conductivity_multiplier": 1.1632145679075254,
+    "skull_conductivity_multiplier": 0.9892798406351261,
+    "cap_rotation_degrees": 0.7012919281669541,
+    "maximum_tangential_jitter_m": 0.0022183274804538464,
+    "maximum_contact_surface_error_m": 1.3877787807814457e-17,
+    "head_id": "sphere_rep1_004",
+    "split": "development",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151005046,
+    "severity": 1.5,
+    "radius_m": 0.09239218912663727,
+    "center_m": [
+      0.0006691098196326969,
+      0.0009651580931202725,
+      -0.000334080655673939
+    ],
+    "brain_conductivity_multiplier": 1.1423168896962417,
+    "skull_conductivity_multiplier": 0.9049565453549772,
+    "cap_rotation_degrees": -0.7425258843673683,
+    "maximum_tangential_jitter_m": 0.002350656838979705,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_005",
+    "split": "development",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151006055,
+    "severity": 1.5,
+    "radius_m": 0.0892891921152985,
+    "center_m": [
+      0.0015876784597033196,
+      -0.0008181696575405175,
+      0.001018980923001135
+    ],
+    "brain_conductivity_multiplier": 1.0484841620432594,
+    "skull_conductivity_multiplier": 1.1833463505280488,
+    "cap_rotation_degrees": 0.2369808587554385,
+    "maximum_tangential_jitter_m": 0.0022517589677199536,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_006",
+    "split": "development",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151007064,
+    "severity": 1.5,
+    "radius_m": 0.08709736507774014,
+    "center_m": [
+      -0.0013148538429811106,
+      -0.001829179633661171,
+      -0.001142102485168631
+    ],
+    "brain_conductivity_multiplier": 1.0467681338884014,
+    "skull_conductivity_multiplier": 1.0442002673119393,
+    "cap_rotation_degrees": 0.9247975439948195,
+    "maximum_tangential_jitter_m": 0.0021668404315062745,
+    "maximum_contact_surface_error_m": 1.3877787807814457e-17,
+    "head_id": "sphere_rep1_007",
+    "split": "development",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151008073,
+    "severity": 1.5,
+    "radius_m": 0.09204782991546365,
+    "center_m": [
+      0.0006747313127942671,
+      -0.0007827064641995104,
+      0.0014958459958878101
+    ],
+    "brain_conductivity_multiplier": 0.9517255937470808,
+    "skull_conductivity_multiplier": 0.8329396307206671,
+    "cap_rotation_degrees": 0.6774977210517659,
+    "maximum_tangential_jitter_m": 0.0022167486835849006,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_008",
+    "split": "validation",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151009082,
+    "severity": 1.5,
+    "radius_m": 0.08899192682783535,
+    "center_m": [
+      0.0015160979857701097,
+      -0.0002701647120803857,
+      0.0008089282680099008
+    ],
+    "brain_conductivity_multiplier": 1.0938962993881969,
+    "skull_conductivity_multiplier": 0.7737635819347048,
+    "cap_rotation_degrees": 0.9388613790757832,
+    "maximum_tangential_jitter_m": 0.0023390980273809833,
+    "maximum_contact_surface_error_m": 1.3877787807814457e-17,
+    "head_id": "sphere_rep1_009",
+    "split": "validation",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151010091,
+    "severity": 1.5,
+    "radius_m": 0.0871377558660411,
+    "center_m": [
+      -0.0015726182484249282,
+      0.0004870867580591343,
+      0.000715406275397693
+    ],
+    "brain_conductivity_multiplier": 0.900897916717106,
+    "skull_conductivity_multiplier": 1.0312484343250432,
+    "cap_rotation_degrees": 0.7883812940700707,
+    "maximum_tangential_jitter_m": 0.00226668036654245,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_010",
+    "split": "validation",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151011100,
+    "severity": 1.5,
+    "radius_m": 0.08810418196577,
+    "center_m": [
+      0.0011367674945616229,
+      0.000574373912497924,
+      0.0013752252431824853
+    ],
+    "brain_conductivity_multiplier": 1.1772481551485408,
+    "skull_conductivity_multiplier": 1.0299192266756687,
+    "cap_rotation_degrees": -1.5026069685340175,
+    "maximum_tangential_jitter_m": 0.002275731333550784,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_011",
+    "split": "validation",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151012109,
+    "severity": 1.5,
+    "radius_m": 0.08916411125955923,
+    "center_m": [
+      -0.0006202003292049691,
+      0.000591606624131544,
+      0.000542503026203167
+    ],
+    "brain_conductivity_multiplier": 1.0930740042050127,
+    "skull_conductivity_multiplier": 1.1864211884867384,
+    "cap_rotation_degrees": 1.6671388126964037,
+    "maximum_tangential_jitter_m": 0.00238352667120254,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_012",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151013118,
+    "severity": 1.5,
+    "radius_m": 0.09261050816187523,
+    "center_m": [
+      0.0009959815889575702,
+      -0.0017769142694476386,
+      0.001686121123618559
+    ],
+    "brain_conductivity_multiplier": 1.0386332816829433,
+    "skull_conductivity_multiplier": 0.9896312743378758,
+    "cap_rotation_degrees": 1.9723216840709035,
+    "maximum_tangential_jitter_m": 0.0021960342817198258,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_013",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151014127,
+    "severity": 1.5,
+    "radius_m": 0.08844345548116841,
+    "center_m": [
+      -0.0015769842179503496,
+      -0.001127455335804777,
+      -0.00021968565896993147
+    ],
+    "brain_conductivity_multiplier": 0.9233500733244633,
+    "skull_conductivity_multiplier": 0.7512886353635013,
+    "cap_rotation_degrees": 1.053488902849181,
+    "maximum_tangential_jitter_m": 0.0021491030021498006,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_014",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151015136,
+    "severity": 1.5,
+    "radius_m": 0.08984269491853168,
+    "center_m": [
+      0.000581732568648555,
+      0.0011101644793631742,
+      -0.0009514162910522661
+    ],
+    "brain_conductivity_multiplier": 0.9232584687740099,
+    "skull_conductivity_multiplier": 0.9330124839851319,
+    "cap_rotation_degrees": -0.11315464740213366,
+    "maximum_tangential_jitter_m": 0.002279023116356849,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_015",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151016145,
+    "severity": 1.5,
+    "radius_m": 0.09146573805394376,
+    "center_m": [
+      0.001114083761217272,
+      0.00043425001056081433,
+      -0.0015037213193140851
+    ],
+    "brain_conductivity_multiplier": 1.15060570824116,
+    "skull_conductivity_multiplier": 0.819580796478577,
+    "cap_rotation_degrees": -2.4679081432648817,
+    "maximum_tangential_jitter_m": 0.0020879288557056745,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_016",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151017154,
+    "severity": 1.5,
+    "radius_m": 0.089755813894216,
+    "center_m": [
+      -0.001226435195857437,
+      0.0008582523580477667,
+      -0.0012435825307423628
+    ],
+    "brain_conductivity_multiplier": 1.0631976289813438,
+    "skull_conductivity_multiplier": 1.2347056811001065,
+    "cap_rotation_degrees": 0.48245390685567147,
+    "maximum_tangential_jitter_m": 0.0022527087894198797,
+    "maximum_contact_surface_error_m": 1.3877787807814457e-17,
+    "head_id": "sphere_rep1_017",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151018163,
+    "severity": 1.5,
+    "radius_m": 0.08891750562208754,
+    "center_m": [
+      0.0010274000790544365,
+      -0.0022285679934053266,
+      0.00047956961330619424
+    ],
+    "brain_conductivity_multiplier": 1.0364895363657143,
+    "skull_conductivity_multiplier": 0.934415425637652,
+    "cap_rotation_degrees": 0.2872806372278647,
+    "maximum_tangential_jitter_m": 0.002273338150313954,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_018",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151019172,
+    "severity": 1.5,
+    "radius_m": 0.092433104316751,
+    "center_m": [
+      -0.0001667365829150997,
+      -0.0011720164700763649,
+      -0.0006565262323414588
+    ],
+    "brain_conductivity_multiplier": 0.927312346060926,
+    "skull_conductivity_multiplier": 1.1173259126079231,
+    "cap_rotation_degrees": -0.9041186168890807,
+    "maximum_tangential_jitter_m": 0.002326647552061915,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_019",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151020181,
+    "severity": 1.5,
+    "radius_m": 0.09259810465197303,
+    "center_m": [
+      0.0009593504705165607,
+      0.0007730432884558249,
+      -0.0006442805388272055
+    ],
+    "brain_conductivity_multiplier": 1.0850163747272004,
+    "skull_conductivity_multiplier": 1.2119560011893806,
+    "cap_rotation_degrees": -0.28006559503721307,
+    "maximum_tangential_jitter_m": 0.002237463702981453,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_020",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151021190,
+    "severity": 1.5,
+    "radius_m": 0.08704988168618556,
+    "center_m": [
+      0.002095142544605729,
+      -0.001612333532166862,
+      0.0015918150693360212
+    ],
+    "brain_conductivity_multiplier": 1.0439832504106583,
+    "skull_conductivity_multiplier": 0.7398350608845006,
+    "cap_rotation_degrees": -2.4298715764373906,
+    "maximum_tangential_jitter_m": 0.00231882949278212,
+    "maximum_contact_surface_error_m": 1.3877787807814457e-17,
+    "head_id": "sphere_rep1_021",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151022199,
+    "severity": 1.5,
+    "radius_m": 0.09074391673351849,
+    "center_m": [
+      0.0009020893948425669,
+      0.0018597998815438673,
+      -0.00031118993954015517
+    ],
+    "brain_conductivity_multiplier": 1.0449178871044604,
+    "skull_conductivity_multiplier": 1.1250135131229502,
+    "cap_rotation_degrees": -1.906767222038191,
+    "maximum_tangential_jitter_m": 0.0023322693632670194,
+    "maximum_contact_surface_error_m": 1.3877787807814457e-17,
+    "head_id": "sphere_rep1_022",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151023208,
+    "severity": 1.5,
+    "radius_m": 0.09171230338540635,
+    "center_m": [
+      -0.002009655617446101,
+      -0.002008688730327595,
+      -0.0008664193232496708
+    ],
+    "brain_conductivity_multiplier": 0.8728162064806235,
+    "skull_conductivity_multiplier": 0.8153054640373117,
+    "cap_rotation_degrees": -1.4542724273071062,
+    "maximum_tangential_jitter_m": 0.0022087010860744076,
+    "maximum_contact_surface_error_m": 1.3877787807814457e-17,
+    "head_id": "sphere_rep1_023",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151024217,
+    "severity": 1.5,
+    "radius_m": 0.08912760177875856,
+    "center_m": [
+      -0.0019436795691721816,
+      -0.0017293490711613475,
+      0.001845327678826606
+    ],
+    "brain_conductivity_multiplier": 0.9887730997319256,
+    "skull_conductivity_multiplier": 1.1623521869864961,
+    "cap_rotation_degrees": 2.2549783721321353,
+    "maximum_tangential_jitter_m": 0.002250874418354646,
+    "maximum_contact_surface_error_m": 1.3877787807814457e-17,
+    "head_id": "sphere_rep1_024",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151025226,
+    "severity": 1.5,
+    "radius_m": 0.0928713822049024,
+    "center_m": [
+      -0.0017609112644999978,
+      -0.0015657379564293218,
+      -0.001987888459824784
+    ],
+    "brain_conductivity_multiplier": 0.8856520299151867,
+    "skull_conductivity_multiplier": 1.0248112507258218,
+    "cap_rotation_degrees": -1.957594945786781,
+    "maximum_tangential_jitter_m": 0.002378354891342677,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_025",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151026235,
+    "severity": 1.5,
+    "radius_m": 0.08792553614371519,
+    "center_m": [
+      -0.001993000735266147,
+      -0.0014570181312550871,
+      -0.0005499204217411835
+    ],
+    "brain_conductivity_multiplier": 0.9025361844188402,
+    "skull_conductivity_multiplier": 0.8948029901674596,
+    "cap_rotation_degrees": -1.2033000740886919,
+    "maximum_tangential_jitter_m": 0.0023035082427813472,
+    "maximum_contact_surface_error_m": 1.3877787807814457e-17,
+    "head_id": "sphere_rep1_026",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151027244,
+    "severity": 1.5,
+    "radius_m": 0.09073227255359775,
+    "center_m": [
+      -0.0012680783491965074,
+      0.0014320343551861203,
+      0.0018415057449151168
+    ],
+    "brain_conductivity_multiplier": 1.1374422024363744,
+    "skull_conductivity_multiplier": 0.9435583899314328,
+    "cap_rotation_degrees": 2.6053801572315,
+    "maximum_tangential_jitter_m": 0.0022969387958741085,
+    "maximum_contact_surface_error_m": 4.163336342344337e-17,
+    "head_id": "sphere_rep1_027",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151028253,
+    "severity": 1.5,
+    "radius_m": 0.08901364470380436,
+    "center_m": [
+      0.0021720277231307627,
+      0.0016372945366756484,
+      -0.0010643969110976838
+    ],
+    "brain_conductivity_multiplier": 1.0427142107330383,
+    "skull_conductivity_multiplier": 0.8204890843049514,
+    "cap_rotation_degrees": 1.0729096747625808,
+    "maximum_tangential_jitter_m": 0.0023422792036349714,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_028",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151029262,
+    "severity": 1.5,
+    "radius_m": 0.0880341258983633,
+    "center_m": [
+      0.0002081328741066353,
+      0.002030709548721855,
+      0.0020423208435577313
+    ],
+    "brain_conductivity_multiplier": 0.8535748004552473,
+    "skull_conductivity_multiplier": 0.8207070912079709,
+    "cap_rotation_degrees": -1.6805994326096187,
+    "maximum_tangential_jitter_m": 0.0022947244154380166,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_029",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151030271,
+    "severity": 1.5,
+    "radius_m": 0.09180978445916654,
+    "center_m": [
+      0.0015777245304202613,
+      0.002003534090604651,
+      -0.0007088327556623878
+    ],
+    "brain_conductivity_multiplier": 0.9570244449451613,
+    "skull_conductivity_multiplier": 1.024005631344049,
+    "cap_rotation_degrees": 2.681831526354161,
+    "maximum_tangential_jitter_m": 0.0024056163096043887,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_030",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151031280,
+    "severity": 1.5,
+    "radius_m": 0.08695524753636998,
+    "center_m": [
+      -0.00086744501878923,
+      -0.0020592778613156126,
+      0.00038564893940223346
+    ],
+    "brain_conductivity_multiplier": 1.1702532507417858,
+    "skull_conductivity_multiplier": 0.9752945406105611,
+    "cap_rotation_degrees": -2.2875923108361658,
+    "maximum_tangential_jitter_m": 0.0024349299164170717,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_031",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151032289,
+    "severity": 1.5,
+    "radius_m": 0.08687585707204731,
+    "center_m": [
+      -0.0013431621706600535,
+      -0.000115360473728215,
+      0.0021482099642955365
+    ],
+    "brain_conductivity_multiplier": 1.0499705772293944,
+    "skull_conductivity_multiplier": 1.2597445036987545,
+    "cap_rotation_degrees": -1.3965619372441715,
+    "maximum_tangential_jitter_m": 0.00224056091540158,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_032",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151033298,
+    "severity": 1.5,
+    "radius_m": 0.0898979802799523,
+    "center_m": [
+      8.663217327026124e-05,
+      0.0010302311454936477,
+      0.0011041299069244944
+    ],
+    "brain_conductivity_multiplier": 0.8946616915921314,
+    "skull_conductivity_multiplier": 1.0294387132470815,
+    "cap_rotation_degrees": 1.5060267859246863,
+    "maximum_tangential_jitter_m": 0.002274276033908744,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_033",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151034307,
+    "severity": 1.5,
+    "radius_m": 0.08894459208006199,
+    "center_m": [
+      0.00044922821241890026,
+      -0.0006313837139644027,
+      -0.0019281440587791505
+    ],
+    "brain_conductivity_multiplier": 0.9359079867027359,
+    "skull_conductivity_multiplier": 1.0130726836313908,
+    "cap_rotation_degrees": -1.6895836585762802,
+    "maximum_tangential_jitter_m": 0.002281880627169679,
+    "maximum_contact_surface_error_m": 1.3877787807814457e-17,
+    "head_id": "sphere_rep1_034",
+    "split": "check",
+    "fixed_across_observations": true
+  },
+  {
+    "seed": 151035316,
+    "severity": 1.5,
+    "radius_m": 0.08751695856496383,
+    "center_m": [
+      0.0011078489045689367,
+      0.00021804452932147698,
+      0.0009802976538142896
+    ],
+    "brain_conductivity_multiplier": 1.0141294824218792,
+    "skull_conductivity_multiplier": 1.229631588636109,
+    "cap_rotation_degrees": -0.1476221102442259,
+    "maximum_tangential_jitter_m": 0.0023678903654868987,
+    "maximum_contact_surface_error_m": 2.7755575615628914e-17,
+    "head_id": "sphere_rep1_035",
+    "split": "check",
+    "fixed_across_observations": true
+  }
+]
